@@ -748,9 +748,9 @@ impl IO0Pin<QUADSPI> for PB1<Alternate<AF10, Input<Floating>>> {
     }
 }
 #[cfg(feature = "stm32l4x2")]
-impl private::Sealed for PB2<Alternate<AF10, Input<Floating>>> {}
+impl private::Sealed for PB0<Alternate<AF10, Input<Floating>>> {}
 #[cfg(feature = "stm32l4x2")]
-impl IO1Pin<QUADSPI> for PB2<Alternate<AF10, Input<Floating>>> {
+impl IO1Pin<QUADSPI> for PB0<Alternate<AF10, Input<Floating>>> {
     fn set_speed(self, speed: Speed) -> Self {
         self.set_speed(speed)
     }
