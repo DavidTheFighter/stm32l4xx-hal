@@ -741,6 +741,7 @@ pins!(
     IO3: [PD7]
 );
 
+/*
 #[cfg(feature = "stm32l4x2")]
 impl IO0Pin<QUADSPI> for PB1<Alternate<AF10, Input<Floating>>> {
     fn set_speed(self, speed: Speed) -> Self {
@@ -755,6 +756,7 @@ impl IO1Pin<QUADSPI> for PB0<Alternate<AF10, Input<Floating>>> {
         self.set_speed(speed)
     }
 }
+*/
 
 #[cfg(feature = "stm32l4x6")]
 pins!(
